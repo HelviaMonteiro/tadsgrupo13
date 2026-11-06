@@ -2,7 +2,7 @@
 // Base de Usuários Inicial
 const INITIAL_USERS = [
   { id: '1', name: 'Marcelo Souza', email: 'marcelo@exemplo.com', score: 30, completedQuizzes: [] },
-  { id: '2', name: 'Luisa almeida', email: 'luisa@exemplo.com', score: 20, completedQuizzes: [] },
+  { id: '2', name: 'Luisa Oliveira', email: 'luisa@exemplo.com', score: 20, completedQuizzes: [] },
   { id: '3', name: 'Maria Lago', email: 'maria@exemplo.com', score: 10, completedQuizzes: [] },
   { id: '4', name: 'Lucas Mendes', email: 'lucas@exemplo.com', password: 'teste123', score: 0, completedQuizzes: [] },
   { id: '5', name: 'Mariana Silva', email: 'mariana@exemplo.com', password: 'teste123', score: 0, completedQuizzes: [] }
