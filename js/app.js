@@ -79,15 +79,23 @@ function setupEventListeners() {
 
 function handleLogin(e) {
   e.preventDefault();
-  const name = document.getElementById('loginName').value.trim();
+  const emailDigitado = document.getElementById('loginEmail').value.trim();
   const pass = document.getElementById('loginPassword').value.trim();
 
-  const user = users.find(u => u.name.toLowerCase() === name.toLowerCase());
+  const user = users.find(u => u.email.toLowerCase() === emailDigitado.toLowerCase());
 
   if (!user) {
-    alert('Usuário não encontrado. Verifique o nome digitado ou faça o cadastro.');
+    alert('Usuário não encontrado. Verifique o e-mail digitado ou faça o cadastro.');
     return;
   }
+
+  if (user.password && user.password !== pass) {
+    alert('Senha incorreta!');
+    return;
+  }
+
+  loginUser(user);
+}
 
   // Verifica senha se existir no cadastro
   if (user.password && user.password !== pass) {
@@ -132,7 +140,7 @@ function loginUser(user) {
   userScoreDisplay.textContent = `${currentUser.score} pts`;
   userInfoHeader.style.display = 'flex';
 
-  document.getElementById('loginName').value = '';
+  document.getElementById('loginEmail').value = '';
   document.getElementById('loginPassword').value = '';
   document.getElementById('regName').value = '';
   document.getElementById('regEmail').value = '';
@@ -141,7 +149,6 @@ function loginUser(user) {
   renderCategories();
   showScreen(screenCategory);
 }
-
 function handleLogout() {
   currentUser = null;
   userInfoHeader.style.display = 'none';
