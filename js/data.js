@@ -43,7 +43,7 @@ const QUIZ_DATABASE = {
     { q: "Qual o nome da loja de estátuas de jardim mantida pela Medusa?", options: ["Pedras da Medusa", "Jardim Olímpico", "Empório de Anões de Jardim da Tia Em", "Esculturas Em"], answer: 2 }
   ],
   chaves: [
-    { q: "Qual é a bebida favorita do Chaves que parece de um sabor, é de outro e tem gosto de outro?", options: ["Suco de Limão/Tamarindo/Groselha", "Suco de Laranja", "Refresco de Abacaxi", "Café com Leite"], answer: 0 },
+    { q: "Qual é a bebida favorita do Chaves que parece de um sabor, é de outro e tem gosto de outro?", options: ["Suco de Laranja", "Refresco de Abacaxi","Suco de Limão/Tamarindo/Groselha",  "Café com Leite"], answer: 2 },
     { q: "Qual é o número do apartamento do Seu Madruga?", options: ["72", "14", "71", "24"], answer: 0 },
     { q: "Onde o Chaves realmente mora (segundo ele próprio)?", options: ["No número 8", "No barril", "No restaurante da Dona Florinda", "Na casa do Seu Madruga"], answer: 0 },
     { q: "Qual é o nome do animal de estimação da Dona Clotilde?", options: ["Satanás", "Bichinho", "Fantasma", "Peludinho"], answer: 0 },
