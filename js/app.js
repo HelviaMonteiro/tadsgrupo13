@@ -76,7 +76,6 @@ function setupEventListeners() {
     renderCategories();
   });
 }
-
 function handleLogin(e) {
   e.preventDefault();
   const emailDigitado = document.getElementById('loginEmail').value.trim();
@@ -89,15 +88,6 @@ function handleLogin(e) {
     return;
   }
 
-  if (user.password && user.password !== pass) {
-    alert('Senha incorreta!');
-    return;
-  }
-
-  loginUser(user);
-}
-
-  // Verifica senha se existir no cadastro
   if (user.password && user.password !== pass) {
     alert('Senha incorreta!');
     return;
