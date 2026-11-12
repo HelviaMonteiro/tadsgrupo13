@@ -263,7 +263,7 @@ function handleOptionSelect(selectedIndex) {
   } else {
     buttons[selectedIndex].classList.add('wrong');
     buttons[qData.answer].classList.add('correct');
-    feedbackBox.textContent = `❌ Incorreto! A resposta certa era: "${qData.options[qData.answer]}"`;
+    feedbackBox.textContent = `❌ Incorreto! A resposta correta é: "${qData.options[qData.answer]}"`;
     feedbackBox.className = 'feedback-box wrong';
   }
 
@@ -297,7 +297,7 @@ function finishQuiz() {
   document.getElementById('resultScore').textContent = `${currentQuizScore} / 10`;
 
   let msg = "Excelente! Você é um verdadeiro fã!";
-  if (currentQuizScore < 5) msg = "Bom intento! Que tal rever esta obra e tentar outros quizzes?";
+  if (currentQuizScore < 5) msg = "Bom! Que tal rever esta obra e tentar outros quizzes?";
   else if (currentQuizScore < 8) msg = "Muito bom! Você conhece bastante sobre este tema!";
 
   document.getElementById('resultMessage').textContent = msg;
