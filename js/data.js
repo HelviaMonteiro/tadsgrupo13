@@ -2,7 +2,7 @@
 // Base de Usuários Inicial
 const INITIAL_USERS = [
   { id: '1', name: 'Marcelo Souza', email: 'marcelo@exemplo.com', score: 30, completedQuizzes: [] },
-  { id: '2', name: 'Luisa Oliveira', email: 'luisa@exemplo.com', score: 20, completedQuizzes: [] },
+  { id: '2', name: 'Luisa Almeida', email: 'luisa@exemplo.com', score: 20, completedQuizzes: [] },
   { id: '3', name: 'Maria Lago', email: 'maria@exemplo.com', score: 10, completedQuizzes: [] },
   { id: '4', name: 'Lucas Mendes', email: 'lucas@exemplo.com', password: 'teste123', score: 0, completedQuizzes: [] },
   { id: '5', name: 'Mariana Silva', email: 'mariana@exemplo.com', password: 'teste123', score: 0, completedQuizzes: [] }
@@ -193,12 +193,12 @@ const QUIZ_DATABASE = {
     { q: "Quem é o neto da famosa cirurgiã Catherine Fox/Avery?", options: ["Jackson Avery", "Harper Avery", "Jesse Avery", "Arik Avery"], answer: 0 },
     { q: "Alex Karev finalmente decide se especializar em qual área da cirurgia?", options: ["Cirurgia Pediátrica", "Cirurgia Geral", "Trauma", "Cardio"], answer: 0 },
     { q: "Como Derek Shepherd morre na 11ª temporada?", options: ["Acidente de carro / Atropelamento por caminhão", "Queda de avião", "Tiroteio no hospital", "Ataque cardíaco"], answer: 0 },
-    { q: "Qual foi o famoso post-it de Meredith e Derek?", options: ["O casamento no post-it com os votos", "Uma lista de compras", "Um bilhete de término", "A promessa de adoção da Zola"], answer: 0 },
+    { q: "Qual foi o famoso post-it de Meredith e Derek?", options: [ "Uma lista de compras", "Um bilhete de término", "A promessa de adoção da Zola","O casamento no post-it com os votos"], answer: 3 },
     { q: "Qual o nome da primeira filha adotada por Meredith e Derek?", options: [ "Bailey", "Zola","Ellis", "Sofia"], answer: 1 },
-    { q: "Qual o nome do episódio piloto de Grey's Anatomy?", options: ["A Hard Day's Night", "Into You Like a Train", "It's the End of the World", "Chasing Cars"], answer: 0 },
+    { q: "Qual o nome do episódio piloto de Grey's Anatomy?", options: [ "Into You Like a Train", "It's the End of the World", "A Hard Day's Night","Chasing Cars"], answer: 2 },
     { q: "Quem é a criadora e roteirista principal que lançou a série?", options: [ "Krista Vernoff", "Betsy Beers", "Julie Plec","Shonda Rhimes"], answer: 3 },
     { q: "Em qual temporada ocorre o dramático tiroteio no hospital comandado por Gary Clark?", options: ["Temporada 6", "Temporada 5", "Temporada 8", "Temporada 10"], answer: 0 },
-    { q: "Qual música do Snow Patrol virou o grande tema emocional das tragédias da série?", options: ["Chasing Cars", "How to Save a Life", "The Story", "Breathe"], answer: 0 },
+    { q: "Qual música do Snow Patrol virou o grande tema emocional das tragédias da série?", options: ["How to Save a Life", "Chasing Cars", "The Story", "Breathe"], answer: 1 },
     { q: "April Kepner se casa com quem após fugir do próprio casamento original?", options: [ "Matthew Taylor", "Owen Hunt", "Jackson Avery","Alex Karev"], answer: 2 },
     { q: "Para qual país Cristina Yang se muda ao aceitar administrar um hospital de ponta?", options: [ "Alemanha", "Suiça (Zurique)","França", "Inglaterra"], answer: 1 },
   ],
